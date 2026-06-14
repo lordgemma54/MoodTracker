@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        loadInitUI()
     }
 
     func loadInitUI() {
@@ -54,6 +55,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func saveMood(_ sender: UIButton) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMMM d yyyy"
+        
+        let dateSelected = formatter.string(from: datePicker.date)
+        
+        savedDate.text = "On \(dateSelected), you felt  \(currentEmoji)"
+        
     }
     
     
