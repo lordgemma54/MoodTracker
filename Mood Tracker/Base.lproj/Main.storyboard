@@ -34,7 +34,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="M30-4r-gw8">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="M30-4r-gw8">
                                                 <rect key="frame" x="0.0" y="20.3333333333333" width="353" height="224.66666666666663"/>
                                                 <connections>
                                                     <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="8zD-Sq-CYW"/>
@@ -51,9 +51,6 @@
                                                         <color key="backgroundColor" red="0.86078912019999998" green="0.78979061689999996" blue="0.30849078019999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </backgroundConfiguration>
                                                 </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="saveMood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4p-w7-ZhC"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
